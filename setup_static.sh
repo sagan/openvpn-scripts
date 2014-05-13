@@ -8,7 +8,7 @@ echo -n "ID: "
 read ID
 
 echo "Select Server IP:"
-IPS=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | grep -vE '^192\.161\.' | grep -vE '^10\.'`
+IPS=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | grep -vE '^192\.168\.' | grep -vE '^10\.'`
 declare -a IPA
 IPI=-1
 for IP in $IPS
