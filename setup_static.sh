@@ -50,6 +50,7 @@ cp $SCRIPTPATH/server_static.conf $ID.server.conf
 cp $SCRIPTPATH/client_static.conf $ID.client.conf
 cp $SCRIPTPATH/template_server_start.sh $ID.server_start.sh && chmod +x $ID.server_start.sh
 cp $SCRIPTPATH/template_client_start.sh $ID.client_start.sh && chmod +x $ID.client_start.sh
+cp $SCRIPTPATH/start_all_vpn_servers.sh start_all_vpn_servers.sh && chmod +x start_all_vpn_servers.sh
 
 sed -i "s/##SERVER_IP##/$SERVER_IP/g" $ID.server.conf
 sed -i "s/##SERVER_PORT##/$SERVER_PORT/g" $ID.server.conf
