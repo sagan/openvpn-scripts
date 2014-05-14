@@ -8,6 +8,6 @@ killall openvpn
 cd $SCRIPTPATH
 for F in `ls *.server_start.sh`
 do
-	./F &
+	./$F &
 done
 
